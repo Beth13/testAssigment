@@ -103,10 +103,11 @@ const ExcelToTables = () => {
     setIsLoading(true);
 
     loadDataFromIndexedDB().then((savedData) => {
+      setIsLoading(false);
+
       if (savedData) {
         setData(savedData);
       }
-      setIsLoading(false);
     });
   }, []);
 
