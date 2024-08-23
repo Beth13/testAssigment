@@ -100,11 +100,7 @@ const ExcelToTables = () => {
   };
 
   useEffect(() => {
-    setIsLoading(true);
-
     loadDataFromIndexedDB().then((savedData) => {
-      setIsLoading(false);
-
       if (savedData) {
         setData(savedData);
       }
