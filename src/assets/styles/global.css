@@ -1,0 +1,22 @@
+* {
+  @apply m-0;
+  @apply p-0;
+}
+
+html {
+  @apply overflow-x-hidden;
+}
+
+.wrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply h-[fit-content];
+  @apply w-screen;
+  @apply p-6;
+  @apply gap-10;
+  @apply overflow-x-hidden;
+}
+
+.transition {
+  transition: all 0.3s;
+}
